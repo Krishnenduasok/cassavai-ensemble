@@ -1,7 +1,7 @@
-streamlit==1.46.0
+streamlit==1.26.0
 torch==2.5.1
-torchvision==0.22.1
+torchvision==0.22.0
 ultralytics==8.0.197
 pillow
 gdown
-
+libgl1-mesa-glx
