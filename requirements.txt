@@ -1,9 +1,8 @@
 streamlit
-ultralytics==8.0.20
-Pillow
-opencv-python-headless
-torch==2.7.1
-torchvision==0.22.1
+torch==2.2.1
+torchvision==0.17.1
 gdown
+Pillow
 PyYAML
-matplotlib
+ultralytics==8.0.20
+opencv-python-headless
