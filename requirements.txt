@@ -1,6 +1,6 @@
 streamlit==1.46.0
 torch==2.5.1
-torchvision==0.22.2
+torchvision==0.22.1
 ultralytics==8.0.197
 pillow
 gdown
