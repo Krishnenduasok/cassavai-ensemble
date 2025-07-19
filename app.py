@@ -9,10 +9,9 @@ from model_efficientnet import EfficientNetV2SWithDropout
 from model_mobilenetv3 import MobileNetV3LargeWithDropout
 from torchvision import models
 import torch.nn as nn
-from ultralytics import YOLO
 from ensemble_predict import predict_ensemble, class_names
 import sys
-import streamlit as st
+
 st.write("Python Version:", sys.version)
 
 # MobileNetV3 structure
@@ -44,6 +43,7 @@ def load_models():
     models_dict = {}
 
     try:
+        from ultralytics import YOLO  # 🔁 Moved import inside function
         models_dict['YOLOv8'] = YOLO("cassava_ppd_yolov8.pt")
     except Exception as e:
         st.warning(f"⚠️ YOLOv8 load failed: {e}")
@@ -80,7 +80,7 @@ def load_models():
 
     return models_dict
 
-# Load
+# Load models
 models = load_models()
 
 # App UI
