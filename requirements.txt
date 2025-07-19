@@ -1,6 +1,8 @@
-streamlit==1.26.0
-torch==2.5.1
-torchvision==0.22.0
-ultralytics==8.0.173
-pillow
+streamlit
+ultralytics==8.3.156
+Pillow
+opencv-python-headless
+torch==2.7.1
+torchvision==0.22.1
 gdown
+PyYAML
